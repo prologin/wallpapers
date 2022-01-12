@@ -31,4 +31,11 @@ in
     version = "v1";
     description = "Background image for LightDM login screen of GCC! images";
   };
+
+  prologinCubeMinimal = makeWallpaper {
+      src = ./prologin-cube_minimal.png;
+      pname = "prologin-cube_minimal";
+      version = "v1";
+      description = "Wallpaper with the Prologin Cube";
+  };
 }

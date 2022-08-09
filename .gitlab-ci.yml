@@ -1,0 +1,11 @@
+---
+
+stages:
+  - build
+
+build:
+  stage: build
+  image: docker.nix-community.org/nixpkgs/nix-flakes
+  script:
+    - nix profile install nixpkgs#findutils nixpkgs#gnugrep
+    - nix run .#listPkgs | xargs -I{} nix -L build .#{}

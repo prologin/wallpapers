@@ -32,6 +32,13 @@ in
     description = "Background image for LightDM login screen of GCC! images";
   };
 
+  gcc-black-white = makeWallpaper{
+    src = ./gcc-black-white.png;
+    pname = "gcc-black-white";
+    version = "2022";
+    description = "Wallpaper with a black background and the GCC! logo in white";
+  };
+
   prologinCubeMinimal = makeWallpaper {
       src = ./prologin-cube_minimal.png;
       pname = "prologin-cube_minimal";
@@ -53,10 +60,18 @@ in
       description = "Wallpaper of Prologin contest ${version} edition";
   };
 
+  prolofinale2021 = makeWallpaper {
+    src = ./prolofinale2021.png;
+    pname = "prolo-finale-2021";
+    version = "2021";
+    description = "Wallpaper with the logo of the finale of the Prologin contest ${version} edition";
+  };
+
   prolo2022 = makeWallpaper {
       src = ./prolo2022.png;
       pname = "prologin-2022";
       version = "2022";
       description = "Wallpaper of Prologin contest ${version} edition";
   };
+  
 }

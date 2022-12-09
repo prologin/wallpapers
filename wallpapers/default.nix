@@ -31,6 +31,20 @@ in
     description = "Wallpaper for the ${version} edition of Girls Can Code!";
   };
 
+  gcc2021vertical = makeWallpaper rec {
+    src = ./gcc-witch-black_background.png;
+    pname = "gcc-wallpaper-vertical";
+    version = "2021";
+    description = "Wallpaper of Girls Can Code! theme used since ${version}";
+  };
+
+  gcc2021vertical_no-logo = makeWallpaper rec {
+    src = ./gcc_witch-black_background-nologo.png;
+    pname = "gcc-wallpaper-vertical-no-logo";
+    version = "2021";
+    description = "Wallpaper of Girls Can Code! theme used since ${version}";
+  };
+
   gccLightDM = makeWallpaper {
     src = ./gcc-lightdm.png;
     pname = "gcc-lightdm";

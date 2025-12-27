@@ -52,49 +52,49 @@ in
     description = "Wallpaper with the Prologin Cube";
   };
 
-  prolo2020 = makeWallpaper {
+  prolo2020 = makeWallpaper rec {
     src = ./prolo2020.png;
     pname = "prologin-2020";
     version = "2020";
     description = "Wallpaper of Prologin contest ${version} edition";
   };
 
-  prolo2021 = makeWallpaper {
+  prolo2021 = makeWallpaper rec {
     src = ./prolo2021.png;
     pname = "prologin-2021";
     version = "2021";
     description = "Wallpaper of Prologin contest ${version} edition";
   };
 
-  prolofinale2021 = makeWallpaper {
+  prolofinale2021 = makeWallpaper rec {
     src = ./prolofinale2021.png;
     pname = "prolo-finale-2021";
     version = "2021";
     description = "Wallpaper with the logo of the finale of the Prologin contest ${version} edition";
   };
 
-  prolo2022 = makeWallpaper {
+  prolo2022 = makeWallpaper rec {
     src = ./prolo2022.png;
     pname = "prologin-2022";
     version = "2022";
     description = "Wallpaper of Prologin contest ${version} edition";
   };
 
-  prolo2023 = makeWallpaper {
+  prolo2023 = makeWallpaper rec {
     src = ./prolo2023.png;
     pname = "prologin-2023";
     version = "2023";
     description = "Wallpaper of Prologin contest ${version} edition";
   };
 
-  prolo2026_16_10 = makeWallpaper {
+  prolo2026_16_10 = makeWallpaper rec {
     src = ./prolo2026_16_10.png;
     pname = "prologin-2026_16_10";
     version = "2026";
     description = "Wallpaper of Prologin contest ${version} edition";
   };
 
-  prolo2026_16_9 = makeWallpaper {
+  prolo2026_16_9 = makeWallpaper rec {
     src = ./prolo2026_16_9.png;
     pname = "prologin-2026_16_9";
     version = "2026";

@@ -1,6 +1,12 @@
 { pkgs }:
 let
-  makeWallpaper = { src, pname, version, description }:
+  makeWallpaper =
+    {
+      src,
+      pname,
+      version,
+      description,
+    }:
     pkgs.stdenvNoCC.mkDerivation {
       inherit pname src version;
 
@@ -32,7 +38,7 @@ in
     description = "Background image for LightDM login screen of GCC! images";
   };
 
-  gcc-black-white = makeWallpaper{
+  gcc-black-white = makeWallpaper {
     src = ./gcc-black-white.png;
     pname = "gcc-black-white";
     version = "2022";
@@ -40,24 +46,24 @@ in
   };
 
   prologinCubeMinimal = makeWallpaper {
-      src = ./prologin-cube_minimal.png;
-      pname = "prologin-cube_minimal";
-      version = "v1";
-      description = "Wallpaper with the Prologin Cube";
+    src = ./prologin-cube_minimal.png;
+    pname = "prologin-cube_minimal";
+    version = "v1";
+    description = "Wallpaper with the Prologin Cube";
   };
 
   prolo2020 = makeWallpaper {
-      src = ./prolo2020.png;
-      pname = "prologin-2020";
-      version = "2020";
-      description = "Wallpaper of Prologin contest ${version} edition";
+    src = ./prolo2020.png;
+    pname = "prologin-2020";
+    version = "2020";
+    description = "Wallpaper of Prologin contest ${version} edition";
   };
 
   prolo2021 = makeWallpaper {
-      src = ./prolo2021.png;
-      pname = "prologin-2021";
-      version = "2021";
-      description = "Wallpaper of Prologin contest ${version} edition";
+    src = ./prolo2021.png;
+    pname = "prologin-2021";
+    version = "2021";
+    description = "Wallpaper of Prologin contest ${version} edition";
   };
 
   prolofinale2021 = makeWallpaper {
@@ -68,17 +74,19 @@ in
   };
 
   prolo2022 = makeWallpaper {
-      src = ./prolo2022.png;
-      pname = "prologin-2022";
-      version = "2022";
-      description = "Wallpaper of Prologin contest ${version} edition";
+    src = ./prolo2022.png;
+    pname = "prologin-2022";
+    version = "2022";
+    description = "Wallpaper of Prologin contest ${version} edition";
   };
 
   prolo2023 = makeWallpaper {
-      src = ./prolo2023.png;
-      pname = "prologin-2023";
-      version = "2023";
-      description = "Wallpaper of Prologin contest ${version} edition";
+    src = ./prolo2023.png;
+    pname = "prologin-2023";
+    version = "2023";
+    description = "Wallpaper of Prologin contest ${version} edition";
+  };
+
   prolo2026_16_10 = makeWallpaper {
     src = ./prolo2026_16_10.png;
     pname = "prologin-2026_16_10";
@@ -92,5 +100,4 @@ in
     version = "2026";
     description = "Wallpaper of Prologin contest ${version} edition";
   };
-  
 }

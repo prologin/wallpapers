@@ -79,6 +79,18 @@ in
       pname = "prologin-2023";
       version = "2023";
       description = "Wallpaper of Prologin contest ${version} edition";
+  prolo2026_16_10 = makeWallpaper {
+    src = ./prolo2026_16_10.png;
+    pname = "prologin-2026_16_10";
+    version = "2026";
+    description = "Wallpaper of Prologin contest ${version} edition";
+  };
+
+  prolo2026_16_9 = makeWallpaper {
+    src = ./prolo2026_16_9.png;
+    pname = "prologin-2026_16_9";
+    version = "2026";
+    description = "Wallpaper of Prologin contest ${version} edition";
   };
   
 }

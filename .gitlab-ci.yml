@@ -2,6 +2,7 @@
 
 stages:
   - build
+  - nix-fmt-check
 
 build:
   stage: build
@@ -9,3 +10,9 @@ build:
   script:
     - nix profile install nixpkgs#findutils nixpkgs#gnugrep
     - nix run .#listPkgs | xargs -I{} nix -L build .#{}
+    
+nix-fmt-check:
+  stage: nix-fmt-check
+  image: docker.nix-community.org/nixpkgs/nix-flakes
+  script:
+    - nix run .#formatter.x86_64-linux -- --fail-on-change

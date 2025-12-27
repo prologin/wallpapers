@@ -1,0 +1,12 @@
+
+---
+repos:
+  - repo: local
+    hooks:
+      - id: nix-fmt
+        name: Format Nix files
+        entry: nix run .#formatter.x86_64-linux -- --fail-on-change
+        language: system
+        pass_filenames: false
+        types: [file, text]
+        require_serial: true

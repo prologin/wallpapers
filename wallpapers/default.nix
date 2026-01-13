@@ -108,6 +108,20 @@ in
     description = "Wallpaper of Girls Can Code! theme used since ${version}";
   };
 
+  prolo2025 = makeWallpaper rec {
+    src = ./prolo2025.png;
+    pname = "prologin-2025";
+    version = "2025";
+    description = "Wallpaper of Prologin contest ${version} edition";
+  };
+
+  prolo2025_dark = makeWallpaper rec {
+    src = ./prolo2025_dark.png;
+    pname = "prologin-2025-dark";
+    version = "2025";
+    description = "Wallpaper of Prologin contest ${version} edition (dark version)";
+  };
+
   prolo2026_16_10 = makeWallpaper rec {
     src = ./prolo2026_16_10.png;
     pname = "prologin-2026_16_10";

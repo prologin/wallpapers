@@ -28,7 +28,7 @@ in
     src = ./gcc2021.jpg;
     pname = "gcc-wallpaper";
     version = "2021";
-    description = "Wallpaper for the ${version} edition of Girls Can Code!";
+    description = "Wallpaper of Girls Can Code! theme used since ${version}";
   };
 
   gcc2021vertical = makeWallpaper rec {
@@ -99,6 +99,13 @@ in
     pname = "prologin-2023";
     version = "2023";
     description = "Wallpaper of Prologin contest ${version} edition";
+  };
+
+  gcc2024 = makeWallpaper rec {
+    src = ./gcc2024.png;
+    pname = "gcc-wallpaper";
+    version = "2024";
+    description = "Wallpaper of Girls Can Code! theme used since ${version}";
   };
 
   prolo2026_16_10 = makeWallpaper rec {

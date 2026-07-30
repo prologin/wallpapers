@@ -135,4 +135,11 @@ in
     version = "2026";
     description = "Wallpaper of Prologin contest ${version} edition";
   };
+
+  prolo2026 = makeWallpaper rec {
+    src = ./prolo2026.png;
+    pname = "prologin-2026";
+    version = "2026";
+    description = "Wallpaper of Prologin contest ${version} edition";
+  };
 }
